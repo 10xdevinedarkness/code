@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Darkness Retreat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Divine Darkness Retreat</h2>
+        
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+         <h2> What is the Divine Darkness Retreat?</h2>
+         <p> Divine Darkness Retreats have been used by a variety of spiritual traditions throughout the centuries as a higher-level practice. The aspirant enters a room specially prepared to admit absolutely no light and spends a number of days under this sensory deprivation in order to bring about a profound shift of consciousness.</p>
+    </div>
+    <div class="sec" id="sec">
+        <h2>History of the practice</h2>
+        <p>A Divine Darkness Retreat is an ancient healing practice, especially helpful during challenging times, or when you need a deeply restorative break. Retreating in complete darkness is a practice common to many of the ancient and contemporary spiritual traditions across the world..</p><br />
+        <p>From the monks and lamas in Tibet, to the Kogi Mamos in Colombia; the ancient Egyptians and the mystics of 15th Century France, divine darkness retreats have provided revelation and illumination to countless practitioners who have sought the inner light.</p>
+   </div>
+   <div class="sec" id="sec">
+    <h2>What are the benefits?</h2>
+    <p>A Divine Darkness Retreat is a unique experience. It helps to quiet the mind and gives the body an incredible rest, supporting its own natural rejuvenation. It is thought that the biological structure associated with the third eye, or inner eye, is a gland called the pineal gland. Activation of the pineal gland may be what ancient mystics have called “opening your third eye”.</p><br>
+    <p>Meditation in the dark naturally stimulates the pineal gland enhancing clarity and discernment. Spiritual awakening is a shift in perception. It is not the outer world that changes, but the inner world. Along the way, the practitioner may or may not experience shifts in perception such as psychic abilities, astral travel and lucid dreaming.</p><br>
+    <p>After extended time in darkness, is known that the brain releases DMT. This is a chemical that is also released in birth and death. Darkness can create this chemical naturally and thus we shift perception. We are enabled to enter our depths and the depths of life. It is also deeply restorative, as we have a break from stimulation and sink back into the world of non-doing.</p>
+   </div>
+   <div class="sec" id="sec">
+    <h2>What kind of experiences should I expect?</h2>
+    <p>A Divine Darkness Retreat room is a place for inner discovery. Some people come face to face with fears and challenging thoughts. In fact, this practice is so healing in part because it helps you to face your fears and move through them with grace. You may also experience illuminating visions and a deep sense of peace.</p><br>
+    <p>If your physical condition is good, we recommend that you stay in the room for the duration of your planned retreat, even if you are faced with challenges.</p><br>
+    <p>On your way out be kind to yourself and take some time to integrate. It is not recommended to jump right into work or even much conversation. To receive the full benefits of the retreat, it is important to have time to rest, get in contact with your senses again, and surround yourself with peaceful nature.</p>
+    </div>
+<footer class="footer bg_black">
+    <div class="content has-text-centered">
+      <p>
+        <img class="logo" src="logo.png" id="logo">
+        <br>
+        <strong class="footer_text">Just one Life by Dr. Mehul Shanghvi </strong> 
+      </p>
+    </div>
+  </footer>
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let text = document.getElementById('text');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let mountains_front = document.getElementById('mountains_front');
+
+    window.addEventListener( 'scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.5 + 'px';
+        mountains_front.style.top = value * 0 + 'px';
+       // text.style.marginRight = value * 4 + 'px';
+      //  text.style.marginTop = value * 1.5 + 'px';
+    })
+</script>
+</body>
+</html>
